@@ -25,7 +25,7 @@ const getTransacao =  async (_, res) => {
     }
 };
 
-const getResumoFinanceiro = async (req, res) => {
+const getResumoFinanceiro = async (_, res) => {
     try{
        const entradasQuery = await pool.query(
             "SELECT SUM(valor) AS total_entradas FROM tb_transacoes WHERE tipo = 'entrada'"

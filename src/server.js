@@ -16,8 +16,6 @@ app.get('/', (req, res) => {
 });
 
 app.use('/transacoes', transacaoRoutes);
-
-
 app.get('/resumo', transacaoRoutes);
 
 app.listen(PORT, () => {
